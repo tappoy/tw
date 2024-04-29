@@ -6,12 +6,12 @@ This golang package provides a simple way to write memo to a file, and output it
 
 # Features
 - Append memo to a file `~/.tw.txt` with a timestamp
-  - ex) `2024-04-24 12:06 Hello, world!`
+  - ex) `2024-04-24 14:32:00 tappoy@thinkpad1: Hello, world!`
 - Output memo to the stdout
 
 # Usage
 ```
-$ tw 'Hello, world!' # append 'Hello, world!' to ~/.tw.txt
+$ tw Hello, world! # append 'Hello, world!' to ~/.tw/tw.txt
 $ tw -a              # print all memo
 $ tw -t              # print today's memo
 $ tw -g 'Hello'      # search 'Hello' using regex in all memo and print it

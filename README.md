@@ -11,7 +11,7 @@ This golang package provides a simple way to write memo to a file, and output it
 
 # Installation
 ```bash
-go install github.com/tappoy/tw
+go install github.com/tappoy/tw@latest
 ```
 
 # Usage

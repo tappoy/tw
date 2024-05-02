@@ -15,6 +15,7 @@ $ tw Hello, world! # append 'Hello, world!' to ~/.tw/tw.txt
 $ tw -a              # print all memo
 $ tw -t              # print today's memo
 $ tw -g 'Hello'      # search 'Hello' using regex in all memo and print it
+$ tw -v              # show version
 ```
 
 # License

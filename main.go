@@ -9,6 +9,8 @@ import (
 	"regexp"
 	"strings"
 	"time"
+
+	ver "github.com/tappoy/version"
 )
 
 const dirname = ".tw"
@@ -23,6 +25,7 @@ func main() {
 		a = flag.Bool("a", false, "Print all memos")
 		t = flag.Bool("t", false, "Print today's memos")
 		g = flag.Bool("g", false, "Search memos by keyword using regular expression")
+		v = flag.Bool("v", false, "Show version")
 	)
 	flag.Parse()
 	args := flag.Args()
@@ -33,6 +36,8 @@ func main() {
 		printTodaysMemos()
 	} else if *g {
 		searchMemos(args)
+	} else if *v {
+		printVersion()
 	} else {
 		if len(args) == 0 {
 			flag.Usage()
@@ -97,4 +102,8 @@ func searchMemos(args []string) {
 			fmt.Println(line)
 		}
 	}
+}
+
+func printVersion() {
+	fmt.Printf("tw version %v", ver.Version())
 }

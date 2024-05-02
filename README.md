@@ -9,6 +9,11 @@ This golang package provides a simple way to write memo to a file, and output it
   - ex) `2024-04-24 14:32:00 tappoy@thinkpad1: Hello, world!`
 - Output memo to the stdout
 
+# Installation
+```bash
+go install github.com/tappoy/tw
+```
+
 # Usage
 ```
 $ tw Hello, world! # append 'Hello, world!' to ~/.tw/tw.txt

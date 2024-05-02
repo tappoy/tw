@@ -105,5 +105,5 @@ func searchMemos(args []string) {
 }
 
 func printVersion() {
-	fmt.Printf("tw version %v", ver.Version())
+	fmt.Printf("tw version %v\n", ver.Version())
 }
